@@ -1,6 +1,6 @@
 # Background Remover
 
-A simple web application that removes backgrounds from images using OpenCV's segmentation methods. Built with Gradio for an easy-to-use interface.
+A simple web application that removes backgrounds from images using OpenCV's segmentation methods. Built with Streamlit for an easy-to-use interface.
 
 ## Features
 
@@ -8,8 +8,8 @@ A simple web application that removes backgrounds from images using OpenCV's seg
 - Instant background removal
 - Preview processed images
 - Download processed images
-- Example images included
-- Public sharing capability
+- Clean, intuitive interface
+- Side-by-side image comparison
 
 ## Installation
 
@@ -43,19 +43,17 @@ pip install -r requirements.txt
 1. Start the application:
 
 ```bash
-python main.py
+streamlit run main.py
 ```
 
-2. The application will start and provide two URLs:
-   - Local URL (usually http://127.0.0.1:7860)
-   - Public URL (temporary, for sharing)
+2. The application will start and open in your default web browser
+   - Local URL (usually http://localhost:8501)
+   - Network URL (for local network access)
 
-3. Open the provided URL in your web browser
-
-4. Use the application:
-   - Upload an image using the upload button
-   - The processed image will appear automatically
-   - Download the processed image if desired
+3. Use the application:
+   - Upload an image using the sidebar upload button
+   - The original and processed images will be displayed
+   - Download the processed image using the sidebar download button
 
 ## Technical Details
 
@@ -67,7 +65,7 @@ The background removal process uses the following steps:
 ## Requirements
 
 - Python 3.6+
-- gradio
+- streamlit
 - opencv-python
 - numpy
 - Pillow
