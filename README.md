@@ -1,17 +1,19 @@
-# Background Remover
+# 🎨 Background Remover
 
 A simple web application that removes backgrounds from images using OpenCV's segmentation methods. Built with Streamlit for an easy-to-use interface.
 
-## Features
+![Remove Image Background](https://github.com/user-attachments/assets/92e1f097-a17f-4b8d-85be-275b8c08e5e7)
 
-- Upload images (supports PNG, JPG, JPEG)
-- Instant background removal
-- Preview processed images
-- Download processed images
-- Clean, intuitive interface
-- Side-by-side image comparison
+## ✨ Features
 
-## Installation
+- 📤 Upload images (supports PNG, JPG, JPEG)
+- ⚡ Instant background removal
+- 👀 Preview processed images
+- 💾 Download processed images
+- 🧼 Clean, intuitive interface
+- 🔍 Side-by-side image comparison
+
+## 🛠️ Installation
 
 1. Clone the repository:
 
@@ -38,7 +40,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## Usage
+## 🚀 Usage
 
 1. Start the application:
 
@@ -47,22 +49,22 @@ streamlit run main.py
 ```
 
 2. The application will start and open in your default web browser
-   - Local URL (usually http://localhost:8501)
-   - Network URL (for local network access)
+   - 🌐 Local URL (usually http://localhost:8501)
+   - 📡 Network URL (for local network access)
 
 3. Use the application:
-   - Upload an image using the sidebar upload button
-   - The original and processed images will be displayed
-   - Download the processed image using the sidebar download button
+   - 📂 Upload an image using the sidebar upload button
+   - 🖼️ The original and processed images will be displayed
+   - 💾 Download the processed image using the sidebar download button
 
-## Technical Details
+## 🔍 Technical Details
 
 The background removal process uses the following steps:
 1. Converts the image to grayscale
 2. Applies binary thresholding to create a mask
 3. Uses the mask to extract the foreground
 
-## Requirements
+## 📋 Requirements
 
 - Python 3.6+
 - streamlit
@@ -70,18 +72,18 @@ The background removal process uses the following steps:
 - numpy
 - Pillow
 
-## Development
+## 🛠️ Development
 
 To modify the background removal algorithm, edit the `remove_background()` function in `main.py`. The current implementation uses a simple threshold-based approach, but you could implement more sophisticated methods like:
 - Grab Cut
 - Deep learning-based segmentation
 - Color-based segmentation
 
-## License
+## 📜 License
 
 [MIT License](LICENSE)
 
-## Contributing
+## 🤝 Contributing
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/amazing-feature`)
@@ -89,6 +91,6 @@ To modify the background removal algorithm, edit the `remove_background()` funct
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## Support
+## 🆘 Support
 
 For support, please open an issue in the GitHub repository.
